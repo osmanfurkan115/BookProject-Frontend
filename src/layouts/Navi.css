@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&family=Roboto:wght@500&display=swap');
+
+.ui.menu .item {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+
+.ui.menu .menu {
+    display: flex;
+    list-style: none;
+    padding: 25px 30px;
+}
