@@ -1,6 +1,8 @@
 import { ReactElement, useState } from 'react'
-import { Menu } from 'semantic-ui-react'
+import { Button, Menu } from 'semantic-ui-react'
 import './Navi.css'
+import BookImage from '../assets/undraw_book_lover_mkck.svg'
+import { NavLink } from 'react-router-dom'
 
 export default function Navi(): ReactElement {
 
@@ -13,20 +15,34 @@ export default function Navi(): ReactElement {
     return (
         <div>
 
-            <Menu pointing text fixed="top">
+            <Menu secondary text fixed="top">
+               <img alt="" src={BookImage} width="80px" style={{marginLeft: 30, marginTop: 10}} />
                 <Menu.Menu position="left">
                     <Menu.Item
+                        as={NavLink}
+                        to = "/"
                         name='home'
-                        // as={NavLink}
-                        // to = "/"
                         active={activeItem === 'home'}
                         onClick={() => handleClick('home')}
                     />
                     <Menu.Item
-                        name='test'
-                        active={activeItem === 'test'}
-                        onClick={() => handleClick('test')}
+                        as={NavLink}
+                        to = "/books"
+                        name='books'
+                        active={activeItem === 'books'}
+                        onClick={() => handleClick('books')}
                     />
+                </Menu.Menu>
+
+                <Menu.Menu position="right">
+                  <Button
+                       positive
+                       as={NavLink} 
+                       to = "/admin" 
+                       active={activeItem === 'admin'} 
+                       onClick={() => handleClick('admin')} 
+                       content="Admin Panel"
+                   />
                 </Menu.Menu>
 
             </Menu>

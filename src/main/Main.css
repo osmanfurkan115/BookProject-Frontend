@@ -1,6 +1,26 @@
-.image {
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Overpass&family=Roboto:ital,wght@1,100&display=swap');
 
+.image {
     margin-top: 25em;
     margin-left: 80em;
     width: 22em;
 } 
+
+.text {
+    margin-top: -190px;
+    margin-left: 180px;
+    text-align: left;
+}
+
+.text .header {
+    font-family: 'Overpass', sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.text p {
+    font-size: 15px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+}
