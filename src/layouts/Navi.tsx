@@ -21,6 +21,7 @@ export default function Navi(): ReactElement {
                     <Menu.Item
                         as={NavLink}
                         to = "/"
+                        exact={true}
                         name='home'
                         active={activeItem === 'home'}
                         onClick={() => handleClick('home')}
@@ -29,6 +30,7 @@ export default function Navi(): ReactElement {
                         as={NavLink}
                         to = "/books"
                         name='books'
+                        exact={true}
                         active={activeItem === 'books'}
                         onClick={() => handleClick('books')}
                     />

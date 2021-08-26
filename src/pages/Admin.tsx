@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import { ReactElement } from 'react'
 import AdminNavbar from '../layouts/AdminNavbar'
 
 export default function Admin(): ReactElement {

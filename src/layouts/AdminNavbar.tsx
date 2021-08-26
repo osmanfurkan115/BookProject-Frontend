@@ -16,8 +16,8 @@ export default function AdminNavbar(): ReactElement {
             <Menu fluid pointing secondary vertical>
                     <Menu.Item
                         name='home'
-                        exact
                         as={NavLink}
+                        exact={true}
                         to="/admin"
                         active={activeItem === 'home'}
                         onClick={() => handleActiveItem('home')}
@@ -25,14 +25,14 @@ export default function AdminNavbar(): ReactElement {
                     <Menu.Item
                         name='Add Book'
                         as={NavLink}
-                        exact
+                        exact={true}
                         to="/admin/addBook"
                         active={activeItem === 'addBook'}
                         onClick={() => handleActiveItem('addBook')}
                     />
                     <Menu.Item
                         name='Exit'
-                        exact
+                        exact={true}
                         as={NavLink}
                         to="/"
                         active={activeItem === 'exit'}
