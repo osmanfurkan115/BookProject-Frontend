@@ -35,7 +35,6 @@ export default function Navi(): ReactElement {
                         onClick={() => handleClick('books')}
                     />
                 </Menu.Menu>
-
                 <Menu.Menu position="right">
                   <Button
                        positive

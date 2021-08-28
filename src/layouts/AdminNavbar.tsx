@@ -12,7 +12,7 @@ export default function AdminNavbar(): ReactElement {
     }
     
     return (
-        <div className="background">
+        <div className="backgroundAdmin">
             <Menu fluid pointing secondary vertical>
                     <Menu.Item
                         name='home'
