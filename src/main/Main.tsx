@@ -7,7 +7,21 @@ import "./Main.css";
 export default function Main(): ReactElement {
     return (
         <div className="background">
-            <Navi/>
+            <Navi />
+            <div className="contact">
+                <div className="mail">
+                    <Icon name="mail" />
+                    osmanfurkan115@gmail.com
+                </div>
+
+                <div className="phone">
+                   <Icon name="phone" />
+                    +905000000000
+                </div>
+
+            </div>
+
+
             <div>
                 <img alt="" src={BookImage} className="image" />
             </div>
@@ -21,19 +35,19 @@ export default function Main(): ReactElement {
                 </p>
             </div>
             <div className="box">
-                    <Grid padded textAlign='center'>
+                <Grid padded textAlign='center'>
 
-                            <Grid.Column>
-                                <Header icon>
-                                    <Icon name='search' />
-                                    Find Book
-                                </Header>
+                    <Grid.Column>
+                        <Header icon>
+                            <Icon name='search' />
+                            Find Book
+                        </Header>
 
-                                <Search input={{ icon: 'search', iconPosition: 'right' }}
-                                 placeholder='Search book...'
-                                  />
-                            </Grid.Column>
-                    </Grid>
+                        <Search input={{ icon: 'search', iconPosition: 'right' }}
+                            placeholder='Search book...'
+                        />
+                    </Grid.Column>
+                </Grid>
             </div>
 
 

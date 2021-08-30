@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Overpass&family=Roboto:ital,wght@1,100&display=swap');
 
 .image {
-    margin-top: 25em;
+    margin-top: 13em;
     margin-left: 80em;
     width: 22em;
 } 
 
 .text {
-    margin-top: -190px;
+    margin-top: -210px;
     margin-left: 180px;
     text-align: left;
 }
@@ -23,6 +23,15 @@
     font-size: 15px;
     width: 400px;
     font-family: 'Roboto', sans-serif;
+}
+.contact {
+    padding-top: 140px;
+    padding-left: 200px;
+    
+}
+
+.contact .phone {
+    display: flex;
 }
 
 .box {
