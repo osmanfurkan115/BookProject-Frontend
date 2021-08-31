@@ -1,7 +1,7 @@
 import { ReactElement, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'semantic-ui-react'
-import '../pages/Admin.css'
+import '../pages/admin/Admin.css'
 
 export default function AdminNavbar(): ReactElement {
 

@@ -43,7 +43,7 @@ export default function Main(): ReactElement {
                             Find Book
                         </Header>
 
-                        <Search input={{ icon: 'search', iconPosition: 'right' }}
+                        <Search input={{ icon: 'search'}}
                             placeholder='Search book...'
                         />
                     </Grid.Column>

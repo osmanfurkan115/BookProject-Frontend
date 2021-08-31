@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import AdminNavbar from '../layouts/AdminNavbar'
+import AdminNavbar from '../../layouts/AdminNavbar'
 
 export default function Admin(): ReactElement {
     
