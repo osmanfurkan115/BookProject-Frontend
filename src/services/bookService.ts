@@ -1,7 +1,9 @@
 import axios from 'axios'
+import { Book } from '../pages/books/Books';
 
+  
 export default class BookService {
-    getBooks() {
-        return axios.get("http://localhost:8080/v1/book/getBooks");
+    async getBooks() {
+        return await axios.get("http://localhost:8080/v1/book/getBooks").then(book => book.data) as Book[];
     }
 }

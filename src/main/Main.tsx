@@ -6,7 +6,7 @@ import "./Main.css";
 
 export default function Main(): ReactElement {
     return (
-        <div className="background">
+        <div>
             <Navi />
             <div className="contact">
                 <div className="mail">
