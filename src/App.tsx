@@ -5,6 +5,7 @@ import "./App.css"
 import AddBook from './pages/admin/AddBook';
 import Books from './pages/books/Books';
 import Admin from './pages/admin/Admin';
+import BookDetail from './pages/books/BookDetail';
 
 export default function App(): ReactElement {
   return (
@@ -14,6 +15,7 @@ export default function App(): ReactElement {
         <Route exact path="/admin/addBook" component={AddBook} />
         <Route exact path="/" component={Main} />
         <Route exact path="/books" component={Books} />
+        <Route exact path="/books/:id" component={BookDetail} />
       </Switch>
 
 

@@ -47,9 +47,10 @@ export default function Books(): ReactElement {
         <Segment.Group>
           {books.map((book) => (
             <Segment key={book.id} secondary raised>
-              <h1>
-                {book.name} - {book.author.name}
-              </h1>
+              <h2>
+                {book.name} - {book.author.name} (Year: {book.publishingYear})
+              </h2>
+              <p>{book.description}   -   {book.pageAmount} Pages</p>
               <Button
                 color="orange"
                 content="Rate"

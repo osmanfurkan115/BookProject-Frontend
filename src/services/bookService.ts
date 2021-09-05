@@ -10,4 +10,8 @@ export default class BookService {
     async updateBook(book: Book) {
         await axios.put("http://localhost:8080/v1/book/update", book);
     }
+
+    async getBookByName(name: string) {
+        return await axios.get("http://localhost:8080/v1/book/getBookByName/" + name).then(book => book.data);
+    }
 }
